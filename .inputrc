@@ -1,0 +1,18 @@
+# I hate the bell
+set bell-style none
+
+# Autocomplete is great
+set completion-ignore-case On
+set completion-prefix-display-length 4
+set completion-query-items 100
+set expand-tilde on
+set show-all-if-ambiguous on
+
+# Handle 8 bit characters okay
+set input-meta on
+set output-meta on
+
+# History
+set history-preserve-point on
+
+set horizontal-scroll-mode off
