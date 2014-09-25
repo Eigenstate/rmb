@@ -9,6 +9,7 @@ alias la='ls -la'
 
 # python
 PYTHONPATH="/Users/robinbetz/anaconda/pkgs:$PYTHONPATH"
+PYTHONPATH="/Users/robinbetz/mixtape/Mixtape:$PYTHONPATH"
 
 # OpenSUSE's default PATH is kind of annoying
 PATH=/usr/sbin:/sbin:$PATH

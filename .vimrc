@@ -32,9 +32,13 @@ function! SKEL_spec()
 	setf spec
 endfunction
 autocmd BufNewFile	*.spec	call SKEL_spec()
+
 " filetypes
 filetype plugin on
 filetype indent on
+
+" Jump to last position on opening file
+autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Get nice indentations
 set ts=2
@@ -62,6 +66,7 @@ let fortran_more_precise=1
 map M :w <Enter> :!make install <Enter>
 
 " Colors
+syntax on
 set term=xterm-256color
 set t_Co=256
 " set background=dark
